@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a web developer passionate about building creative solutions.</p>
+      <button onclick="scrollToSection('services')">Explore Services</button>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Building responsive, interactive websites and web apps.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Creating modern, user-friendly designs that delight users.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Optimization</h3>
+        <p>Ensuring your website ranks high and is easily discoverable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
